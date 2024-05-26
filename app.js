@@ -21,3 +21,17 @@ function cardExpand(button) {
     }
 }
 /*--------------------------------*/
+
+document.addEventListener("DOMContentLoaded", function () {
+    var audio = document.getElementById("myAudio");
+    
+    audio.play();
+    
+});
+
+document.getElementById('exploreNowButton').addEventListener('click', function() {
+    window.scrollTo({
+      top: document.body.scrollHeight / 2,
+      behavior: 'smooth'
+    });
+  });

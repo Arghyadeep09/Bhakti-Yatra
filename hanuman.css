@@ -20,8 +20,9 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 5vw;
-  color: red;
+  color: #fff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: linear-gradient(to bottom, #e62314, #f19e18);
 }
 .navbar h2 {
   font-size: 2.5vw;
@@ -36,7 +37,7 @@ body {
 .links h4 a {
   text-decoration: none;
   font-size: 1rem;
-  color: red;
+  color: #fff;
 }
 
 .links h4 a:hover {
@@ -66,11 +67,12 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background: linear-gradient(to bottom, #e62314, #f19e18);
 }
 
-.hanumandivcontent h2 {
-  color: #ff6500;
-  font-weight: 700;
+.hanumandivcontent h1 {
+  color: #fff;
+  font-weight: bold;
 }
 
 .hanumanCard {
@@ -86,7 +88,6 @@ body {
   height: calc(100% - 100px);
   display: flex;
   justify-content: space-between;
-  margin-bottom: 400px;
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 100px;
@@ -163,11 +164,13 @@ p {
   justify-content: center;
   align-items: center;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background: linear-gradient(to bottom, #f3696e, #f8a902);
+
 }
-.hanumanproducts h2 {
-  color: #ff6500;
-  font-weight: 700;
-  font-size: 10rem;
+.hanumanproducts h1 {
+  color: #08203e;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 .productCards {
@@ -180,6 +183,7 @@ p {
   padding-bottom: 10vh;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  
 }
 
 .hanuman-content-section {
@@ -200,45 +204,197 @@ p {
   border-radius: 8px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  
+}
+
+.hanuman-content-section .card:hover {
+  transform: scale(1.05);
+  box-shadow: rgb(38, 57, 77) 0px 25px 35px -10px;
 }
 
 .hanuman-content-section .card img {
-  padding-top: 5%;
+  
   height: 40vh;
-  width: 90%;
+  width: 100%;
   margin-bottom: 5px;
 }
+
 .hanuman-content-section .card h2 {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-family: gilroy;
   color: #0f2a5a;
 }
-.hanuman-content-section .card p {
-  padding: 10px 15px;
-  font-size: 0.75rem;
-  color: rgb(65, 65, 65);
-  line-height: 1rem;
-  font-family: cursive;
-  font-weight: 700;
-}
 
-.rest {
-  display: none;
-  font-family: cursive;
-}
 .myBtn {
   padding: 4px 4px;
   font-family: cursive;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   margin-bottom: 10px;
   font-weight: 500;
-  background-color: #16418c;
-  color: #f7f7f7;
+  background-color: #ebebec;
+  color: #030303;
   border-radius: 10px;
   opacity: 75%;
   cursor: pointer;
+}
+.myBtn a{
+  text-decoration: none;
+  color: #030303;
 }
 .myBtn:hover {
   background-color: #0f2a5a;
   color: #fff;
 }
+
+
+.cardimg6 , .cardimg5, .cardimg4, .cardimg3, .cardimg2, .cardimg1 {
+  height: 300px; /* Set a specific height for the image container */
+  width: 100%;
+  position: relative;
+  overflow: hidden; /* Ensure content stays within the container */
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+}
+
+.cardimg6 img, .cardimg5 img, .cardimg4 img, .cardimg3 img, .cardimg2 img, .cardimg1 img {
+  height: 100%;
+  width: 100%; 
+  position: absolute;
+  top: 0;
+  transition: opacity 3s ease;
+}
+
+.cardimg6 .img1, .cardimg5 .img1, .cardimg4 .img1, .cardimg3 .img1, .cardimg2 .img1, .cardimg1 .img1 {
+  opacity: 1;
+  z-index: 1;
+}
+
+.cardimg6 .img2, .cardimg5 .img2, .cardimg4 .img2, .cardimg3 .img2, .cardimg2 .img2, .cardimg1 .img2 {
+  opacity: 0;
+  z-index: 2;
+}
+
+.cardimg6:hover .img1, .cardimg5:hover .img1, .cardimg4:hover .img1, .cardimg3:hover .img1, .cardimg2:hover .img1, .cardimg1:hover .img1 {
+  opacity: 0;
+}
+
+.cardimg6:hover .img2, .cardimg5:hover .img2, .cardimg4:hover .img2, .cardimg3:hover .img2, .cardimg2:hover .img2, .cardimg1:hover .img2 {
+  opacity: 1;
+}
+
+h2 {
+  margin-top: 20px; 
+  text-align: center; 
+}
+
+.myBtn {
+  margin-top: 10px; 
+}
+
+     /* Footer Styling */
+     .footer {
+      background-image: linear-gradient(to right, #e62314 0%, #f19e18 100%);
+      color: #fff;
+      height: 350px;
+      padding-top: 40px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      
+    }
+    
+    .footer .footer-content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    .footer .footer-section {
+      flex: 1;
+      padding: 20px;
+    }
+    
+    .footer .logo-text {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: left;
+    }
+    
+    .footer .logo-text span {
+      color: #f39c12;
+    }
+    
+    .footer .contact span {
+      display: block;
+      margin: 10px 0;
+    }
+    
+    .footer .socials a {
+      margin: 0 10px;
+      color: #313030;
+      text-decoration: none;
+    }
+    
+    .footer .socials a:hover {
+      color: #f39c12;
+    }
+    
+    .footer .links ul {
+      list-style: none;
+    }
+    
+    .footer .links ul a {
+      text-decoration: none;
+      color: #fff;
+      margin: 10px 0;
+      display: block;
+    }
+    
+    .footer .links ul a:hover {
+      color: #f39c12;
+    }
+    
+    .footer .contact-form .contact-input {
+      background: #1c1c1c;
+      color: #d3d3d3;
+      border: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: calc(100% - 22px);
+    }
+    
+    .footer .contact-form .btn {
+      background: #f39c12;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 1.1em;
+      color: #ffffff;
+    }
+    
+    .footer .contact-form .btn:hover {
+      background: #d35400;
+    }
+    
+    .footer .footer-bottom {
+      background: #1c1c1c;
+      color: #ffffff;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      position: relative;
+      top: 40px;
+    }
+    
+    /* Media Queries for responsive design */
+    @media (max-width: 768px) {
+      .footer .footer-content {
+          flex-direction: column;
+      }
+    
+      .footer .footer-section {
+          margin-bottom: 30px;
+      }
+    }

@@ -1,0 +1,254 @@
+* {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+.parent {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.navbar {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+.navbar h2 {
+  font-size: 2.5vw;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  gap: 5vw;
+}
+.links h4 a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: aliceblue;
+}
+
+.links h4 a:hover {
+  color: rgb(11, 192, 228);
+}
+
+.content {
+  position: relative;
+  color: aliceblue;
+  height: 50%;
+  width: 100%;
+}
+.content .desc {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  font-size: 5vw; /* Center the text horizontally and vertically */
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.image {
+  overflow: hidden;
+  height: 600px; /* Adjust container height as needed */
+  width: 100%;
+  display: flex; /* Center image horizontally */
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  max-width: 100%; /* Adjust to make the image smaller */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the entire div while maintaining its aspect ratio */
+}
+
+.ContentHeading{
+  height: 200px;
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.ContentHeading h2 {
+ text-shadow: #041e42;
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+
+
+.Cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Add space between cards */
+}
+
+.mahadev, .vishnu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem; /* Add space between image and description */
+}
+
+.image1, .image2 {
+  flex: 1;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.goddescription {
+  flex: 2;
+}
+
+/* Optional: Styling for images to ensure they are well-sized */
+.image1 img, .image2 img {
+  max-width:  450px;
+  max-height: 450px;
+}
+
+
+.goddescription h3 {
+  margin-bottom: 0.5rem;
+  margin-left: 100px;
+}
+
+.goddescription p {
+  margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .mahadev, .vishnu {
+    flex-direction: column;
+    text-align: center; /* Center text for smaller screens */
+    margin-right: 100px;
+  }
+  
+  .image1, .image2 {
+    margin-bottom: 1rem; /* Add space between image and text for smaller 
+    screens */
+    margin-right: 10px;
+  }
+}
+
+
+/* Footer Styling */
+.footer {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: #ffffff;
+  height: 350px;
+  padding-top: 40px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer .footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer .logo-text {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.footer .logo-text span {
+  color: #f39c12;
+}
+
+.footer .contact span {
+  display: block;
+  margin: 10px 0;
+}
+
+.footer .socials a {
+  margin: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer .socials a:hover {
+  color: #f39c12;
+}
+
+.footer .links ul {
+  list-style: none;
+}
+
+.footer .links ul a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 10px 0;
+  display: block;
+}
+
+.footer .links ul a:hover {
+  color: #f39c12;
+}
+
+.footer .contact-form .contact-input {
+  background: #1c1c1c;
+  color: #d3d3d3;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: calc(100% - 22px);
+}
+
+.footer .contact-form .btn {
+  background: #f39c12;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+.footer .contact-form .btn:hover {
+  background: #d35400;
+}
+
+.footer .footer-bottom {
+  background: #002d62;
+  color: #ffffff;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  top: 40px;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  .footer .footer-content {
+      flex-direction: column;
+  }
+
+  .footer .footer-section {
+      margin-bottom: 30px;
+  }
+}
