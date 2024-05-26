@@ -1,7 +1,9 @@
+
 body {
   overflow-x: hidden;
-}
-* {
+  background: linear-gradient(to right, #ebf4f5 0%, #b5c6e0 100%);
+
+}* {
   margin: 0;
   padding: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -16,13 +18,13 @@ body {
 
 .navbar {
   height: 100px;
-  background-color: #ff9f66;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 5vw;
   color: red;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: linear-gradient(to right, #b5c6e0 0%, #ebf4f5 100%);
 }
 .navbar h2 {
   font-size: 2.5vw;
@@ -109,11 +111,12 @@ body {
 .ContentHeading {
   height: 100px;
   width: 100%;
-  background-color: #eaa454;
+  background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  
 }
 
 .ContentHeading h2 {
@@ -142,10 +145,14 @@ body {
   width: 50%;
   padding: 5vw 5vw;
 }
-
+.goddescription h3{
+  font-weight: 700;
+  color: rgb(58, 57, 57);
+}
 .goddescription p {
   margin-top: 1vw;
   margin-bottom: 2vw;
+  line-height: 3.3vh;
 }
 
 .image1 {
@@ -163,14 +170,16 @@ body {
 
 .vishnu {
   height: calc(100% - 100px);
-  width: 100%;
+  width: 90%;
   display: flex;
   position: relative;
+ 
 }
 
 .image2 {
   height: 100%;
   width: 50%;
+  
 }
 
 .image2 img {
@@ -181,7 +190,7 @@ body {
   border-radius: 5px;
 }
 
-.brahma {
+.krishna {
   height: calc(100% - 100px); /*parent height-pixel */
   width: 100%;
   display: flex;
@@ -204,7 +213,7 @@ body {
 
 .shreeram {
   height: calc(100% - 100px); /*parent height-pixel */
-  width: 100%;
+  width: 90%;
   display: flex;
   position: relative;
 }
@@ -247,7 +256,7 @@ body {
 
 .saraswati {
   height: calc(100% - 100px);
-  width: 100%;
+  width: 90%;
   display: flex;
   position: relative;
 }
@@ -297,36 +306,46 @@ body {
   padding: 1vw 1vw;
   border: none;
   background-color: #ffec9e;
-  color: rgb(16, 16, 16);
   border-radius: 10px;
-  font-size: 0.7vw;
   cursor: pointer;
+}
+.godBtn:hover{
+  background-color: #1d1b1b;
+}
+.godBtn:hover a{
+  
+  color: #f2e9e6;
+}
+.godBtn a{
+  text-decoration: none;
+  font-size: .8vw;
+  color: #1d1b1b;
   font-weight: 700;
 }
-.godBtn:hover {
-  background-color: #eaa454;
-  color: #ae5030;
-}
+
 
 .vahan {
   height: 200px;
-  width: 100%;
-  background-color: #d77e17e4;
+  width: 85%;
+  background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 2.3vw;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .vahan h2 {
-  color: rgb(255, 238, 4);
-  font-weight: 700;
+  color: rgb(223, 105, 1);
+  font-weight: bold;
 }
 
 .vahanBody {
   height: 400px;
-  width: 100%;
+  width: 85%;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -334,12 +353,9 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 500;
-  
-
-  
 }
 .vahanBody h1 {
-  font-size: 3vw;
+  font-size: 2.7vw;
   color: #006769;
   font-weight: 700;
 }
@@ -363,15 +379,17 @@ body {
 .bahanCardContainer{
   
   height: 100%;
-  width: 100%;
-  background-color:aliceblue;
+  width: 85%;
+  background-color:#fff;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top:10vh;
   padding-bottom: 10vh;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 10px;
+ 
 }
 .content-section{
   display: flex;
@@ -391,6 +409,12 @@ body {
   border-radius: 8px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.content-section .card:hover {
+  transform: scale(1.05);
+  box-shadow: rgb(38, 57, 77) 0px 25px 35px -10px;
 }
 
 .content-section .card img{
@@ -433,4 +457,111 @@ body {
 .myBtn:hover{
 background-color: #0f2a5a;
 color: #fff;
+}
+
+/* Footer Styling */
+.footer {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: #ffffff;
+  height: 350px;
+  padding-top: 40px;
+  position: relative;
+  bottom: 0;
+  width: 85%;
+  overflow: hidden;
+  
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer .footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer .logo-text {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.footer .logo-text span {
+  color: #f39c12;
+}
+
+.footer .contact span {
+  display: block;
+  margin: 10px 0;
+}
+
+.footer .socials a {
+  margin: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer .socials a:hover {
+  color: #f39c12;
+}
+
+.footer .links ul {
+  list-style: none;
+}
+
+.footer .links ul a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 10px 0;
+  display: block;
+}
+
+.footer .links ul a:hover {
+  color: #f39c12;
+}
+
+.footer .contact-form .contact-input {
+  background: #1c1c1c;
+  color: #d3d3d3;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: calc(100% - 22px);
+}
+
+.footer .contact-form .btn {
+  background: #f39c12;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+.footer .contact-form .btn:hover {
+  background: #d35400;
+}
+
+.footer .footer-bottom {
+  background: #002d62;
+  color: #ffffff;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  top: 40px;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  .footer .footer-content {
+      flex-direction: column;
+  }
+
+  .footer .footer-section {
+      margin-bottom: 30px;
+  }
 }
