@@ -76,7 +76,10 @@ body {
     color: #f7f7f7;
     font-weight: bold;
     font-size: 1.5rem;
+<<<<<<< HEAD
     text-shadow: 2px 2px 2px 2px rgba(255, 248, 248, 0.3);
+=======
+>>>>>>> 1b167789ce3cdb12b65b1e870fd33d3a4eb79cc7
   }
   
   .mahadevCard {

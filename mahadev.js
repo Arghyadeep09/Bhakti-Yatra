@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     audio.play();
     video.play();
+<<<<<<< HEAD
 });
 
 document.getElementById("hamburgerBtn").onclick = function() {
@@ -15,3 +16,6 @@ document.getElementById("hamburgerBtn").onclick = function() {
     }
   };
   
+=======
+});
+>>>>>>> 1b167789ce3cdb12b65b1e870fd33d3a4eb79cc7
