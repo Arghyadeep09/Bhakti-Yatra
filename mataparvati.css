@@ -1,0 +1,406 @@
+body {
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    /* background: linear-gradient(to bottom, #CFD6E6, #E7EFF9); */
+}
+
+.parent {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.navbar {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  color:#08203e;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: linear-gradient(to bottom, #e9b7ce, #d3f3f1);
+}
+.navbar h2 {
+  font-size: 2.5vw;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  gap: 5vw;
+}
+.links h4 a {
+  text-decoration: none;
+  font-size: 1rem;
+  color:#08203e;
+}
+
+.links h4 a:hover {
+  color: rgb(251, 252, 253);
+}
+
+.video {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #EDF1F4, #C3CBDC);
+}
+
+.video video {
+  height:100%;
+  width: 58%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.hanumandivcontent {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background: linear-gradient(to bottom, #e9b7ce, #d3f3f1);
+}
+
+.hanumandivcontent h1 {
+  color: #08203e;
+  font-weight: bold;
+  font-size: 1.7vw;
+}
+
+.hanumanCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100px;
+  
+}
+
+.hanumanContent1,
+.hanumanContent2,
+.hanumanContent3 {
+  height: calc(100% - 100px);
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+
+.hanumanDescription1,
+.hanumanDescription2,
+.hanumanDescription3{
+  height: 100%;
+  width: 50%;
+  padding: 5vw 5vw;
+}
+
+.imagehanuman1,
+.imagehanuman2,
+.imagehanuman3 {
+  height: 100%;
+  width: 60%;
+  margin-right: 100px;
+  position: relative;
+}
+
+.imagehanuman1 img,
+.imagehanuman2 img,
+.imagehanuman3 img {
+  position: absolute;
+  height: 550px;
+  margin-top: 1.2vw;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 5px;
+  transition: opacity 3s ease;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+p {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.imagehanuman1 .img1,
+.imagehanuman2 .img1,
+.imagehanuman3 .img1 {
+  opacity: 1;
+  z-index: 1;
+}
+
+.imagehanuman1 .img2,
+.imagehanuman2 .img2,
+.imagehanuman3 .img2 {
+  opacity: 0;
+  z-index: 2;
+}
+
+.imagehanuman1:hover .img1,
+.imagehanuman2:hover .img1,
+.imagehanuman3:hover .img1 {
+  opacity: 0;
+}
+
+.imagehanuman1:hover .img2,
+.imagehanuman2:hover .img2,
+.imagehanuman3:hover .img2 {
+  opacity: 1;
+}
+
+/*--------------------------------Products----------------------------------*/
+
+.hanumanproducts {
+  height: 200px;
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background: linear-gradient(to bottom, #e9b7ce, #d3f3f1);
+
+}
+.hanumanproducts h1 {
+  color: #08203e;
+  font-weight: bold;
+  font-size: 3rem;
+  
+}
+
+.productCards {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  
+}
+
+.hanuman-content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2.5vw;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+}
+.hanuman-content-section .card {
+  background-color: #f7f7f7;
+  min-height: 60vh;
+  width: 20vw;
+  border-radius: 8px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  
+}
+
+.hanuman-content-section .card:hover {
+  transform: scale(1.05);
+  box-shadow: rgb(38, 57, 77) 0px 25px 35px -10px;
+}
+
+.hanuman-content-section .card img {
+  
+  height: 40vh;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.hanuman-content-section .card h2 {
+  font-size: 1.2rem;
+  font-family: gilroy;
+  color: #0f2a5a;
+}
+
+.myBtn {
+  padding: 4px 4px;
+  font-family: cursive;
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+  background-color: #ebebec;
+  color: #030303;
+  border-radius: 10px;
+  opacity: 75%;
+  cursor: pointer;
+}
+.myBtn a{
+  text-decoration: none;
+  color: #030303;
+}
+.myBtn:hover {
+  background-color: #0f2a5a;
+  color: #fff;
+}
+
+
+.cardimg6 , .cardimg5, .cardimg4, .cardimg3, .cardimg2, .cardimg1 {
+  height: 300px; /* Set a specific height for the image container */
+  width: 100%;
+  position: relative;
+  overflow: hidden; /* Ensure content stays within the container */
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+}
+
+.cardimg6 img, .cardimg5 img, .cardimg4 img, .cardimg3 img, .cardimg2 img, .cardimg1 img {
+  height: 100%;
+  width: 100%; 
+  position: absolute;
+  top: 0;
+  transition: opacity 3s ease;
+}
+
+.cardimg6 .img1, .cardimg5 .img1, .cardimg4 .img1, .cardimg3 .img1, .cardimg2 .img1, .cardimg1 .img1 {
+  opacity: 1;
+  z-index: 1;
+}
+
+.cardimg6 .img2, .cardimg5 .img2, .cardimg4 .img2, .cardimg3 .img2, .cardimg2 .img2, .cardimg1 .img2 {
+  opacity: 0;
+  z-index: 2;
+}
+
+.cardimg6:hover .img1, .cardimg5:hover .img1, .cardimg4:hover .img1, .cardimg3:hover .img1, .cardimg2:hover .img1, .cardimg1:hover .img1 {
+  opacity: 0;
+}
+
+.cardimg6:hover .img2, .cardimg5:hover .img2, .cardimg4:hover .img2, .cardimg3:hover .img2, .cardimg2:hover .img2, .cardimg1:hover .img2 {
+  opacity: 1;
+}
+
+h2 {
+  margin-top: 20px; 
+  text-align: center; 
+}
+
+.myBtn {
+  margin-top: 10px; 
+}
+
+/* Footer Styling */
+.footer {
+  background-image: linear-gradient(to right, #e9b7ce 0%, #d3f3f1 100%);
+  color: #08203e;
+  height: 350px;
+  padding-top: 40px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer .footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer .logo-text {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+}
+
+.footer .logo-text span {
+  color: #f39c12;
+}
+
+.footer .contact span {
+  display: block;
+  margin: 10px 0;
+}
+
+.footer .socials a {
+  margin: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer .socials a:hover {
+  color: #f39c12;
+}
+
+.footer .links ul {
+  list-style: none;
+}
+
+.footer .links ul a {
+  text-decoration: none;
+  color: #08203e;
+  margin: 10px 0;
+  display: block;
+}
+
+.footer .links ul a:hover {
+  color: #f39c12;
+}
+
+.footer .contact-form .contact-input {
+  background: #1c1c1c;
+  color: #d3d3d3;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: calc(100% - 22px);
+}
+
+.footer .contact-form .btn {
+  background: #f39c12;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+.footer .contact-form .btn:hover {
+  background: #d35400;
+}
+
+.footer .footer-bottom {
+  background: #1c1c1c;
+  color: #ffffff;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  top: 40px;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  .footer .footer-content {
+      flex-direction: column;
+  }
+
+  .footer .footer-section {
+      margin-bottom: 30px;
+  }
+}
