@@ -2,11 +2,6 @@
 body {
   overflow-x: hidden;
   background: linear-gradient(to right, #ebf4f5 0%, #b5c6e0 100%);
-<<<<<<< HEAD
-=======
-
-}* {
->>>>>>> 1b167789ce3cdb12b65b1e870fd33d3a4eb79cc7
   margin: 0;
   padding: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -183,11 +178,7 @@ body {
   width: 50%;
   padding: 5vw 5vw;
 }
-<<<<<<< HEAD
 .goddescription h3 {
-=======
-.goddescription h3{
->>>>>>> 1b167789ce3cdb12b65b1e870fd33d3a4eb79cc7
   font-weight: 700;
   color: rgb(58, 57, 57);
 }
@@ -346,7 +337,6 @@ body {
   background-color: #ffec9e;
   border-radius: 10px;
   cursor: pointer;
-<<<<<<< HEAD
   text-decoration: none;
   font-size: 0.8vw;
   color: #1d1b1b;
@@ -355,23 +345,6 @@ body {
 .godBtn:hover {
   background-color: #e4fab0;
 }
-=======
-}
-.godBtn:hover{
-  background-color: #1d1b1b;
-}
-.godBtn:hover a{
-  
-  color: #f2e9e6;
-}
-.godBtn a{
-  text-decoration: none;
-  font-size: .8vw;
-  color: #1d1b1b;
-  font-weight: 700;
-}
-
->>>>>>> 1b167789ce3cdb12b65b1e870fd33d3a4eb79cc7
 
 
 .vahan {
@@ -384,7 +357,6 @@ body {
   line-height: 3vw;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   border-radius: 8px;
-<<<<<<< HEAD
   
   
 }
@@ -395,15 +367,6 @@ body {
   font-weight: bold;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-=======
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.vahan h2 {
-  color: rgb(223, 105, 1);
-  font-weight: bold;
->>>>>>> 1b167789ce3cdb12b65b1e870fd33d3a4eb79cc7
 }
 
 .vahanBody {
@@ -443,11 +406,7 @@ body {
 .bahanCardContainer {
   height: 100%;
   width: 85%;
-<<<<<<< HEAD
   background-color: #fff;
-=======
-  background-color:#fff;
->>>>>>> 1b167789ce3cdb12b65b1e870fd33d3a4eb79cc7
   display: flex;
   justify-content: center;
   align-items: center;
@@ -456,10 +415,6 @@ body {
   position: relative;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   border-radius: 10px;
-<<<<<<< HEAD
-=======
- 
->>>>>>> 1b167789ce3cdb12b65b1e870fd33d3a4eb79cc7
 }
 .content-section {
   display: flex;
@@ -480,14 +435,6 @@ body {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   cursor: pointer;
   transition: transform 0.5s ease, box-shadow 0.3s ease;
-<<<<<<< HEAD
-=======
-}
-
-.content-section .card:hover {
-  transform: scale(1.05);
-  box-shadow: rgb(38, 57, 77) 0px 25px 35px -10px;
->>>>>>> 1b167789ce3cdb12b65b1e870fd33d3a4eb79cc7
 }
 
 .content-section .card:hover {
@@ -531,15 +478,9 @@ body {
   opacity: 75%;
   cursor: pointer;
 }
-<<<<<<< HEAD
 .myBtn:hover {
   background-color: #0f2a5a;
   color: #fff;
-=======
-.myBtn:hover{
-background-color: #0f2a5a;
-color: #fff;
->>>>>>> 1b167789ce3cdb12b65b1e870fd33d3a4eb79cc7
 }
 
 /* Footer Styling */
@@ -552,10 +493,6 @@ color: #fff;
   bottom: 0;
   width: 85%;
   overflow: hidden;
-<<<<<<< HEAD
-=======
-  
->>>>>>> 1b167789ce3cdb12b65b1e870fd33d3a4eb79cc7
 }
 
 .footer .footer-content {
@@ -644,7 +581,6 @@ color: #fff;
 /* Media Queries for responsive design */
 @media (max-width: 768px) {
   .footer .footer-content {
-<<<<<<< HEAD
     flex-direction: column;
     width: 100%;
   }
@@ -881,12 +817,3 @@ color: #fff;
   }
 }
 
-=======
-      flex-direction: column;
-  }
-
-  .footer .footer-section {
-      margin-bottom: 30px;
-  }
-}
->>>>>>> 1b167789ce3cdb12b65b1e870fd33d3a4eb79cc7

@@ -18,7 +18,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 5vw;
-<<<<<<< HEAD
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
@@ -28,16 +27,6 @@
   cursor: pointer;
   text-decoration: none;
   color: aliceblue;
-=======
-  color: aliceblue;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-}
-.navbar h2 {
-  font-size: 2.5vw;
-  font-weight: 700;
-  cursor: pointer;
->>>>>>> 1b167789ce3cdb12b65b1e870fd33d3a4eb79cc7
 }
 
 .links {
@@ -98,11 +87,7 @@
 }
 
 .ContentHeading h2 {
-<<<<<<< HEAD
   text-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-=======
- text-shadow: #041e42;
->>>>>>> 1b167789ce3cdb12b65b1e870fd33d3a4eb79cc7
   font-weight: bold;
   font-size: 2vw;
 }
